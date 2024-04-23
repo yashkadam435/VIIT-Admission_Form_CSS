@@ -1,0 +1,209 @@
+<html>
+<head><title> Registration Form</title></head>
+<body bgcolor="#FFE5B4"><center>
+<style>
+h1{color:orange; font-family:Tahoma; font-size:70;text-shadow: 2px 2px #ff0000;}
+h2{color:black; font-family:sans-serif;font-size: 40;text-shadow: 2px 2px #010199}
+marquee{color:red; font-family: 'Franklin Gothic Medium'; font-size: 25; background-color: rgb(217, 137, 196); direction="left"}
+table{color:black; font-family: sans-serif; font-size: 18; background-color:#6c7cd8;}
+button{color:rgb(4, 0, 252)}
+p{text-shadow: 1px 1px #000000; font-family:Verdana;}
+</style>
+<h1><b><u>VIIT Pune</u></b></h1>
+<h2><u>Admission Form</u></h2>
+<hr>
+<marquee><b>*Note: All fields having " * " are mandatory.</b></marquee>
+<hr>       
+<br>
+<h2 style="color:brown"><u>Basic Details</u></h2><br><br>     
+<form id="form1" method="post">
+<table>
+<tr>
+<td><b>* Student's Name : </b></td></td>
+<td><input type="text" id="Student's Name" placeholder="Student's Name" size="25"  required/></td>
+</tr>
+<tr>
+<td><b>* Date of Birth : </b></td>
+<td>
+<input type="date" id="date" required>
+<button type="submit" name="dob"></button>
+</td>
+</tr>
+<tr>
+<td><b>* Father's Name : </b></td>
+<td><input type="text" id="Father's Name" placeholder="Father's Name" size="25"  required/></td>                  
+</tr>
+<tr>                 
+<td><b>* Mother's Name : </b></td>
+<td><input type="text" id="Mother's Name" placeholder="Mother's Name" size="25"  required/></td>
+</tr>
+<tr>
+<td><b>Guardian's Name [if any] : </b></td>
+<td><input type="text" id="Guardian's Name" placeholder="Guardian's Name" size="25"></td>
+</tr>
+<tr>
+<td><b>Guardian's Address : </b></td>
+<td>
+<br><b><textarea id="Gadd" name="Gadd" rows="4" cols="25" placeholder="Address with Pincode..."></textarea></b>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><b>* Student's Mob No. : </b></td>
+<td><input type="mobno" id="Mobile No." placeholder="Mobile Number" size="25" required/></td>
+</tr>
+<tr>
+<td><b>* Email Id : </b></td>
+<td><input type="email" id="email" placeholder="email id" size="25" required/> <td>
+</tr>
+<tr>
+<td><b>* Parent's Mob No. : </b></td>
+<td><input type="Pmobno" id="PMobile No." placeholder="Parents Mob No." size="25"  required/></td>
+</tr>
+<tr>
+<td><b>* Address : </b></td>
+<td><br><textarea id="Address" name="Address" rows="4" cols="25" placeholder="Address with Pincode..." required></textarea></td>
+</tr>
+<tr>
+<td><b><br><br>* Gender : </b></td>
+<td><br>
+<input type="radio" name="Gender" id="Gender" value="Female">
+<b>Female </b>
+<input type="radio" name="Gender" id="Gender" value="Male">
+<b>Male </b>
+<input type="radio" name="Gender" id="Gender" value="Others">
+<b>Others </b>
+</tr>
+<tr>
+<td><b><label for="State">* State : </label></b></td>
+<td>
+<select name="State" id="State" required>
+<option value="Select option">-Select-</option>
+<option value="Andra Pradesh">1.Andra Pradesh</option>
+<option value="Arunachal Pradesh">2.Arunachal Pradesh</option>
+<option value="Assam">3.Assam</option>
+<option value="Bihar">4.Bihar</option>
+<option value="Chattisgarh">5.Chattisgarh</option>
+<option value="Goa">6.Goa</option>
+<option value="Gujrat">7.Gujrat</option>
+<option value="Haryana">8.Haryana</option>
+<option value="Himachal Pradesh">9.Himachal Pradesh</option>
+<option value="Jammu and Kshmir">10.Jammu and Kashmir</option>
+<option value="Jharkhand">11.Jharkhand</option>
+<option value="Karnataka">12.Karnataka</option>
+<option value="Kerla">13.Kerla</option>
+<option value="Madhya Pradesh">14.Madhya Pradesh</option>
+<option value="Maharashtra">15.Maharashtra</option>
+<option value="Manipur">16.Manipur</option>
+<option value="Meghalay">17.Meghalay</option>
+<option value="Mizoram">18.Mizoram</option>
+<option value="Nagaland">19.Nagaland</option>
+<option value="Orissa">20.Orissa</option>
+<option value="Punjab">21.Punjab</option>
+<option value="Rajasthan">22.Rajasthan</option>
+<option value="Sikkim">23.Sikkim</option>
+<option value="Tamil Nadu">24.Tamil Nadu</option>
+<option value="Telangana">25.Telangana</option>
+<option value="Tripura">26.Tripura</option>
+<option value="Uttar Pradesh">27.Uttar Pradesh</option>
+<option value="Uttrakhand">28.Uttrakhand</option>
+<option value="West Bengal">29.West Bengal</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><b>* Pincode : </b></td>
+<td><input type="number" id="Pincode" placeholder="Pincode" size="25" required/>
+</tr>
+</table>
+<hr>
+<marquee><b>*Note: Upload Passport photo in ".jpeg" format only and all other required documents in " .pdf "format only.</b></marquee>
+<hr>            
+<h2 style="color:brown"><u>Documents Section</u></h2><br><br>
+<table width="500" border="2" cellpadding="6" cellspacing="8">
+<tr>
+<td><label for="Photo"><b>* Upload your Passport size Photo:</b></label></td>
+<td><input type="file" accept="image/jpeg, image/jpg" name="Photo" id="Photo" size="40" required/><br><br></td>
+</tr>
+<tr>
+<td><label for="Mk10"><b>* Class 10th Marksheet :</b></label></td>
+<td><input type="file" accept="application/pdf" name="Mk10" id="Mk10" size="40" required/><br><br></td>
+</tr>
+<tr>
+<td><label for="LC"><b>* School Leaving Certificate :</b></label></td>
+<td><input type="file" accept="application/pdf" name="LC" id="LC" size="40" required/><br><br></td>
+</tr>
+<tr>
+<td><label for="birth"><b>* Birth  Certificate :</b></label></td>
+<td><input type="file" accept="application/pdf" name="birth" id="birth" size="40" required/><br><br></td>
+</tr>
+<tr>
+<td><label for ="myCheck"><b>* Do you have Cast Certificate:</b></label></td>
+<td> <input type="checkbox" id="myCheck" onclick="myFunction()">Yes<br>
+<p style="color:red">*Note: "Skip this checkbox if you don't have Cast certificate".</p><br>
+<p id="text1" style="display:none"><b>Please upload the Cast Certificate -></b><br>
+<input type="file" accept="application/pdf" name="Castcertificate" id="Castcertificate" size="40"><br><br>
+</p></td>
+</tr>
+<tr>
+<td><label for="Add"><b>* Address Proof :</b></label></td>
+<td><input type="file" name="Add" id="Add" size="40" required/><br><br></td>
+</tr>
+</table>
+<hr>
+<div>
+<input type="checkbox" id="chkdec" value="1" onclick="confirming(this)" />
+<label for="chkdec"><b>I here by declare that the above filled information is checked and Correct by my side.</b></label>
+</div>
+<hr>
+<div>
+<button type="submit" id="submit_form" disabled onclick=subFun()>Submit form</button>
+</div>
+</form>     
+<script language="javascript" type="text/javascript">
+var form = document.getElementById('form1')      
+function myFunction() {
+var checkBox = document.getElementById("myCheck");
+var text = document.getElementById("text");
+if (checkBox.checked == true){
+text1.style.display = "block";
+} else {
+text1.style.display = "none";
+}
+}
+function confirming(){
+if(chkdec.checked){
+document.getElementById("submit_form").disabled = false;
+}
+else{
+document.getElementById("submit_form").disabled = true;
+}
+}
+function subFun(){
+var a, b, c, d, e, f, g, h, i, j, k, l, m, n, o;
+a = document.getElementById("Student's Name").value;
+b = document.getElementById("date").value;
+c = document.getElementById("Father's Name").value;
+d = document.getElementById("Mother's Name").value;
+e = document.getElementById("Mobile No.").value;
+f = document.getElementById("email").value;
+g = document.getElementById("PMobile No.").value;
+h = document.getElementById("Address").value;
+i = document.getElementById("Gender").value;
+j = document.getElementById("State").value;
+k = document.getElementById("Pincode").value;
+l = document.getElementById("Photo").value;
+m = document.getElementById("Mk10").value;
+n = document.getElementById("LC").value;
+o = document.getElementById("Add").value;
+if (a == "" || b == "" || c == "" || d == "" || e == "" || f == "" || g == "" || h == "" || i == "" || j == "" || k == "" || l == "" || m == "" || n == "" || o == "") 
+{ 
+alert("Please fill all mandatory details.");
+}
+else{
+alert("Thanks...!! Your Response has been recorded...!")
+}
+}        
+</script>
+</center></body>
+</html>
